@@ -1,7 +1,7 @@
 {
   "name": "electron01",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Exemplo de electron com auto-updater",
   "main": "main.js",
   "dependencies": {
     "electron-updater": "^3.1.2",
