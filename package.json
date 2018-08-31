@@ -1,0 +1,41 @@
+{
+  "name": "electron01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "electron-updater": "^3.1.2",
+    "mousetrap": "^1.6.2"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "electron": "^2.0.8",
+    "electron-builder": "^20.28.3",
+    "electron-reload": "^1.2.5"
+  },
+  "scripts": {
+    "build": "cross-env NODE_ENV=production electron-builder -p always",
+    "build:dir": "cross-env NODE_ENV=production electron-builder --dir",
+    "start": "cross-env NODE_ENV=development electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "ValterFC",
+  "license": "ISC",
+  "build": {
+    "appId": "com.valterfc.testeelectron01",
+    "productName": "Avançando com Electron",
+    "directories": {
+      "output": "dist"
+    },
+    "publish": {
+      "provider": "github",
+      "owner": "valterfc",
+      "repo": "avancando-com-electron"
+    },
+    "win": {
+      "icon": "tray.png",
+      "target": "nsis"
+    }
+  }
+}
